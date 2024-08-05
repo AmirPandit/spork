@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir Pandit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            animation: shake 0.5s;
+        }
+        .message {
+            font-size: 2rem;
+            color: #333;
+        }
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .home-link:hover {
+            background: #ff4c4c;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">Hi! This is <br> Amir Pandit.</div>
+        <div class="message">This page begin under construction</div>
+    </div>
+    <script>
+        // Optionally, you can add some JavaScript for additional interactivity.
+        document.querySelector('.error-code').addEventListener('mouseover', function() {
+            this.style.animation = 'shake 0.5s';
+        });
+        document.querySelector('.error-code').addEventListener('animationend', function() {
+            this.style.animation = '';
+        });
+    </script>
+</body>
+</html>
